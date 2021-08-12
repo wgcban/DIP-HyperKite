@@ -24,7 +24,7 @@ from scipy.io import savemat
 import torch.nn.functional as F
 from utils.vgg_perceptual_loss import VGGPerceptualLoss, VGG19
 from utils.spatial_loss import Spatial_Loss
-#
+
 def ensure_dir(file_path):
     directory = os.path.dirname(file_path)
 
