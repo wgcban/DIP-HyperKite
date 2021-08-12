@@ -1,0 +1,79 @@
+{
+    "name": "pan_transformer",
+    "experim_name": "Experiments/DHP",
+    "train_dataset": "botswana4_dataset",
+    "train_batch_size": 1,
+    "val_batch_size": 1,
+    "num_workers": 2,
+    "loss_type": "L1",
+    "spatial_loss": true,
+    "spatial_avg_method": "GAP",
+    "alpha": 0.6,
+
+    "optimizer": {
+        "type": "adam",
+        "args":{
+            "lr": 1e-3,
+            "weight_decay": 1e-4,
+            "momentum": 0.9
+        },
+        "step_size": 1300,
+        "gamma": 0.1
+    },
+
+    "model": {
+        "input_depth": 32,
+        "NET_TYPE": "skip",
+        "INPUT": "noise",
+        "pad": "reflection",
+        "OPT_OVER": "net",
+        "KERNEL_TYPE": "lanczos2",
+        "reg_noise_std": 0.03
+    },
+
+    "trainer": {
+        "total_epochs": 1500,
+        "iter_size": 1,
+        "test_freq": 5
+    },
+
+    "pavia_dataset": {
+        "data_dir": "./datasets/pavia_centre/pavia/",
+        "spectral_bands": 102,
+        "LR_size": 40,
+        "HR_size": 160,
+        "augmentation": false,
+        "max_value": 8000,
+        "factor": 4
+    },
+
+    "botswana_dataset": {
+        "data_dir": "./datasets/botswana/botswana/",
+        "spectral_bands": 145,
+        "LR_size": 40,
+        "HR_size": 120,
+        "augmentation": false,
+        "max_value": 8000,
+        "factor": 3
+        },
+
+    "chikusei_dataset": {
+        "data_dir": "./datasets/chikusei/chikusei/",
+        "spectral_bands": 128,
+        "LR_size": 64,
+        "HR_size": 256,
+        "augmentation": false,
+        "max_value": 9725,
+        "factor": 4
+        },
+    
+    "botswana4_dataset": {
+            "data_dir": "./datasets/botswana4/botswana4/",
+            "spectral_bands": 145,
+            "LR_size": 30,
+            "HR_size": 120,
+            "augmentation": false,
+            "max_value": 7365,
+            "factor": 4
+            }   
+}
