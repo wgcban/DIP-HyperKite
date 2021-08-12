@@ -14,9 +14,17 @@ Hyperspectral pansharpening aims to synthesize a low-resolution hyperspectral im
     year={2021}
     } 
 
-## DIP-HyperKite Network Architecture
+## DIP-HyperKite Network
 <p align="center">
 <img src="imgs/GRS-method.jpg"/>
+
+## Proposed Spatial Loss Function for DIP Process
+<p align="center">
+<img src="imgs/GRS-R.jpg" width="300px" height="200px"/>
+
+## Proposed HyperKite Network for Residual Prediction
+<p align="center">
+<img src="imgs/GRS-HyperKite.jpg"/>
 
 ## Qaulitative Results on Pavia Center Dataset
 <p align="center">
