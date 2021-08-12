@@ -26,14 +26,15 @@ Hyperspectral pansharpening aims to synthesize a low-resolution hyperspectral im
 <p align="center">
 <img src="imgs/GRS-HyperKite.jpg"/>
 
-## Qaulitative Results on Pavia Center Dataset
+
+## Qaulitative Results on [Pavia Center Dataset](http://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes)
 <p align="center">
 <img src="imgs/GRS2-final_pred_pavia.jpg"/>
 
-## Qaulitative Results on Botswana Dataset
+## Qaulitative Results on [Botswana Dataset](http://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes)
 <p align="center">
 <img src="imgs/GRS2-final_pred_botswana.jpg"/>
 
-## Qaulitative Results on Chikusei Dataset
+## Qaulitative Results on [Chikusei Dataset](https://naotoyokoya.com/Download.html)
 <p align="center">
 <img src="imgs/GRS2-final_pred_chikusei.jpg"/>
