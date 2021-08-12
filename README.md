@@ -20,7 +20,7 @@ Hyperspectral pansharpening aims to synthesize a low-resolution hyperspectral im
 
 ## Proposed Spatial Loss Function for DIP Process
 <p align="center">
-<img src="imgs/GRS-R.jpg" width="300px" height="200px"/>
+<img src="imgs/GRS-R.jpg" width="600px"/>
 
 ## Proposed HyperKite Network for Residual Prediction
 <p align="center">
