@@ -17,3 +17,15 @@ Hyperspectral pansharpening aims to synthesize a low-resolution hyperspectral im
 ## DIP-HyperKite Network Architecture
 <p align="center">
 <img src="imgs/GRS-method.jpg"/>
+
+## Qaulitative Results on Pavia Center Dataset
+<p align="center">
+<img src="imgs/GRS2-final_pred_pavia.jpg"/>
+
+## Qaulitative Results on Botswana Dataset
+<p align="center">
+<img src="imgs/GRS2-final_pred_botswana.jpg"/>
+
+## Qaulitative Results on Chikusei Dataset
+<p align="center">
+<img src="imgs/GRS2-final_pred_chikusei.jpg"/>
