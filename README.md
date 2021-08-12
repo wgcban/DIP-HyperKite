@@ -16,4 +16,4 @@ Hyperspectral pansharpening aims to synthesize a low-resolution hyperspectral im
 
 ## DIP-HyperKite Network Architecture
 <p align="center">
-<img src="imgs/GRS-method.jpg" width="300px" height="200px"/>
+<img src="imgs/GRS-method.jpg"/>
