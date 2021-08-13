@@ -33,6 +33,14 @@ In this paper, we used three publically available datasets and the link to each 
 3. Chikusei Dataset: [Click Here](https://naotoyokoya.com/Download.html)
 
 Once you downloaded the dataset in `.mat` format save them in respective folders: `./datasets/pavia_centre/`, `./datasets/botswana/`, and `./datasets/chikusei/`.
+## Install Requirements
+The `requirements.txt` file lists all Python libraries required for DIP-HyperKite. To install requirements first create a new conda environment and then install all required libraries using following commands.
+
+`conda create --name hyperkite`
+
+`conda activate hyperkite`
+
+`conda install --file requirements.txt`
 
 ## Generating LR-HSIs, PAN images, and Ref HSIs
 Next, we generate LR-HSIs, PAN images, and Ref-HSIs required to train the pansharpening model using the famous Wald's protocol. For this, you simply needs to run the `process_pavia.m`, `process_botswana.m`, and `process_chikusei.m` files in the `./datasets/pavia_centre/`, `./datasets/botswana/`, and `./datasets/chikusei/`, respectively.
