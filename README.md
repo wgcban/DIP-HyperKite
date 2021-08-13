@@ -49,7 +49,7 @@ You need to repreat this for all the three datasets.
 Once you generated the DIP upsampled HSIs, now you are ready to train the HyperKite network. You can train the HyperKite network by executing the following command.
     `CUDA_VISIBLE_DEVICES=0 python train.py --config ./configs/config.json`
 
-## Visualing the results via Tensorboard
+## Visualing the Results via Tensorboard
 All the results will be saved in `./Experiments/` folder. You can visualize all the performance metrics by executing the following command.
     `tensorboard --logdir ./Experiments/Vxx/pavia_center/`
     
