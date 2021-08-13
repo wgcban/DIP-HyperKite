@@ -32,10 +32,16 @@ In this paper, we used three publically available datasets and the link to each 
 2. Botswana Dataset: [Click Here](http://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes)
 3. Chikusei Dataset: [Click Here](https://naotoyokoya.com/Download.html)
 
-Once you downloaded the dataset in `.mat` format save them in respective folders: `./datasets/pavia_center/`, `./datasets/botswana/`, and `./datasets/chikusei/`.
+Once you downloaded the dataset in `.mat` format save them in respective folders: `./datasets/pavia_centre/`, `./datasets/botswana/`, and `./datasets/chikusei/`.
 
 ## Generating LR-HSIs, PAN images, and Ref HSIs
-Next, we generate LR-HSIs, PAN images, and Ref-HSIs required to train the pansharpening model using the famous Wald's protocol. For this, you simply needs to run the `process_pavia_center.m`, `process_botswana.m`, and `process_chikusei.m` files in the `./datasets/pavia_center/`, `./datasets/botswana/`, and `./datasets/chikusei/`, respectively.
+Next, we generate LR-HSIs, PAN images, and Ref-HSIs required to train the pansharpening model using the famous Wald's protocol. For this, you simply needs to run the `process_pavia.m`, `process_botswana.m`, and `process_chikusei.m` files in the `./datasets/pavia_centre/`, `./datasets/botswana/`, and `./datasets/chikusei/`, respectively.
+
+## Upsampling using DIP
+To generate the up-sampled `x_dip` of each LR-HSI patch, you need to run the following code. Please make sure to change the first few lines of the `./config/config_dhp.json` as you want. Basically you want to change the `experiment_name` and `dataset` you want to run.
+    CUDA_VISIBLE_DEVICES=0 python train_dhp.py --config ./configs/config_dhp.json
+
+## Training the HyperKite
 
     
 ## Qaulitative Results on [Pavia Center Dataset](http://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes)
