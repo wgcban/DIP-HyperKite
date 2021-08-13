@@ -38,8 +38,10 @@ Once you downloaded the dataset in `.mat` format save them in respective folders
 Next, we generate LR-HSIs, PAN images, and Ref-HSIs required to train the pansharpening model using the famous Wald's protocol. For this, you simply needs to run the `process_pavia.m`, `process_botswana.m`, and `process_chikusei.m` files in the `./datasets/pavia_centre/`, `./datasets/botswana/`, and `./datasets/chikusei/`, respectively.
 
 ## Upsampling using DIP
-To generate the up-sampled `x_dip` of each LR-HSI patch, you need to run the following code. Please make sure to change the first few lines of the `./config/config_dhp.json` as you want. Basically you want to change the `experiment_name` and `dataset` you want to run.
-    CUDA_VISIBLE_DEVICES=0 python train_dhp.py --config ./configs/config_dhp.json
+To generate the up-sampled version of LR-HSIs, you need to run the following code. 
+Please make sure to change the first few lines of the `./configs/config_dhp.json` as you want. 
+Basically you want to change the `experiment_name` and `dataset` you want to run.
+    `CUDA_VISIBLE_DEVICES=0 python train_dhp.py --config ./configs/config_dhp.json`
 
 ## Training the HyperKite
 
