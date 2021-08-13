@@ -35,7 +35,7 @@ In this paper, we used three publically available datasets and the link to each 
 Once you downloaded the dataset in `.mat` format save them in respective folders: `./datasets/pavia_center/`, `./datasets/botswana/`, and `./datasets/chikusei/`.
 
 ## Generating LR-HSIs, PAN images, and Ref HSIs
-Next, we generate required LR-HSIs, PAN images, and Ref-HSIs required to train the pansharpening algorithm using the famous Wald's protocol. 
+Next, we generate LR-HSIs, PAN images, and Ref-HSIs required to train the pansharpening model using the famous Wald's protocol. For this, you simply needs to run the `generate_patches.m` 
 
     
 ## Qaulitative Results on [Pavia Center Dataset](http://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes)
