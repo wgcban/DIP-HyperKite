@@ -28,9 +28,9 @@ Hyperspectral pansharpening aims to synthesize a low-resolution hyperspectral im
 
 ## Downloading Datasets
 In this paper, we used three publically available datasets and the link to each dataset is given below:
-    -Pavia Center Dataset: [Click Here](http://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes)
-    -Botswana Dataset: [Click Here](http://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes)
-    -Chikusei Dataset: [Click Here](https://naotoyokoya.com/Download.html)
+1. Pavia Center Dataset: [Click Here](http://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes)
+2. Botswana Dataset: [Click Here](http://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes)
+3. Chikusei Dataset: [Click Here](https://naotoyokoya.com/Download.html)
  
 ## Qaulitative Results on [Pavia Center Dataset](http://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes)
 <p align="center">
