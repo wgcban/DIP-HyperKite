@@ -1,5 +1,5 @@
 # DIP-HyperKite: Hyperspectral Pansharpening Based on Improved Deep Image Prior and  Residual Reconstruction
-[Wele Gedara Chaminda Bandara](https://www.researchgate.net/profile/Chaminda-Bandara-4), [Jeya Maria Jose Valanarasu](https://jeya-maria-jose.github.io/research/), [Vishal M. Patel](http://www.rci.rutgers.edu/~vmp93/)
+[Wele Gedara Chaminda Bandara](https://www.researchgate.net/profile/Chaminda-Bandara-4), [Jeya Maria Jose Valanarasu](https://jeya-maria-jose.github.io/research/), [Vishal M. Patel](https://engineering.jhu.edu/vpatel36/sciencex_teams/vishalpatel/)
 
 [[Paper Link](https://arxiv.org/abs/2107.02630)] (Preprint submitted to IEEE Transactions on Geoscience and Remote Sensing)
 
@@ -26,7 +26,33 @@ Hyperspectral pansharpening aims to synthesize a low-resolution hyperspectral im
 <p align="center">
 <img src="imgs/GRS-HyperKite.jpg"/>
 
+## Downloading Datasets
+In this paper, we used three publically available datasets and the link to each dataset is given below:
+1. Pavia Center Dataset: [Click Here](http://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes)
+2. Botswana Dataset: [Click Here](http://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes)
+3. Chikusei Dataset: [Click Here](https://naotoyokoya.com/Download.html)
 
+Once you downloaded the dataset in `.mat` format save them in respective folders: `./datasets/pavia_centre/`, `./datasets/botswana/`, and `./datasets/chikusei/`.
+
+## Generating LR-HSIs, PAN images, and Ref HSIs
+Next, we generate LR-HSIs, PAN images, and Ref-HSIs required to train the pansharpening model using the famous Wald's protocol. For this, you simply needs to run the `process_pavia.m`, `process_botswana.m`, and `process_chikusei.m` files in the `./datasets/pavia_centre/`, `./datasets/botswana/`, and `./datasets/chikusei/`, respectively.
+
+## Upsampling using DIP
+To generate the up-sampled version of LR-HSIs, you need to run the following code. 
+Please make sure to change the first few lines of the `./configs/config_dhp.json` as you want. 
+Basically you want to change the `experiment_name` and `dataset` you want to run.
+    `CUDA_VISIBLE_DEVICES=0 python train_dhp.py --config ./configs/config_dhp.json`
+
+You need to repreat this for all the three datasets.
+
+## Training the HyperKite
+Once you generated the DIP upsampled HSIs, now you are ready to train the HyperKite network. You can train the HyperKite network by executing the following command.
+    `CUDA_VISIBLE_DEVICES=0 python train.py --config ./configs/config.json`
+
+## Visualing the Results via Tensorboard
+All the results will be saved in `./Experiments/` folder. You can visualize all the performance metrics by executing the following command.
+    `tensorboard --logdir ./Experiments/Vxx/pavia_center/`
+    
 ## Qaulitative Results on [Pavia Center Dataset](http://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes)
 <p align="center">
 <img src="imgs/GRS2-final_pred_pavia.jpg"/>
