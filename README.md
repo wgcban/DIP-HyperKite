@@ -43,8 +43,15 @@ Please make sure to change the first few lines of the `./configs/config_dhp.json
 Basically you want to change the `experiment_name` and `dataset` you want to run.
     `CUDA_VISIBLE_DEVICES=0 python train_dhp.py --config ./configs/config_dhp.json`
 
-## Training the HyperKite
+You need to repreat this for all the three datasets.
 
+## Training the HyperKite
+Once you generated the DIP upsampled HSIs, now you are ready to train the HyperKite network. You can train the HyperKite network by executing the following command.
+    `CUDA_VISIBLE_DEVICES=0 python train.py --config ./configs/config.json`
+
+## Visualing the results via Tensorboard
+All the results will be saved in `./Experiments/` folder. You can visualize all the performance metrics by executing the following command.
+    `tensorboard --logdir ./Experiments/Vxx/pavia_center/`
     
 ## Qaulitative Results on [Pavia Center Dataset](http://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes)
 <p align="center">
