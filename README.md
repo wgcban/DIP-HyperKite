@@ -1,5 +1,5 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/hyperspectral-pansharpening-based-on-improved/super-resolution-on-botswana)](https://paperswithcode.com/sota/super-resolution-on-botswana?p=hyperspectral-pansharpening-based-on-improved)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/hyperspectral-pansharpening-based-on-improved/super-resolution-on-pavia-university)](https://paperswithcode.com/sota/super-resolution-on-pavia-university?p=hyperspectral-pansharpening-based-on-improved)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/hyperspectral-pansharpening-based-on-improved/super-resolution-on-pavia-centre)](https://paperswithcode.com/sota/super-resolution-on-pavia-centre?p=hyperspectral-pansharpening-based-on-improved)
 # DIP-HyperKite: Hyperspectral Pansharpening Based on Improved Deep Image Prior and  Residual Reconstruction
 [Wele Gedara Chaminda Bandara](https://www.researchgate.net/profile/Chaminda-Bandara-4), [Jeya Maria Jose Valanarasu](https://jeya-maria-jose.github.io/research/), [Vishal M. Patel](https://engineering.jhu.edu/vpatel36/sciencex_teams/vishalpatel/)
 
