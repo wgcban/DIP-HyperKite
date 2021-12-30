@@ -77,8 +77,4 @@ All the results will be saved in `./Experiments/` folder. You can visualize all 
 <p align="center">
 <img src="imgs/GRS2-final_pred_chikusei.jpg"/>
     
-If you find our paper useful, please cite our paper:
-`
-    @ARTICLE{9664535,  author={Bandara, Wele Gedara Chaminda and Valanarasu, Jeya Maria Jose and Patel, Vishal M.},  journal={IEEE Transactions on Geoscience and Remote Sensing},   title={Hyperspectral Pansharpening Based on Improved Deep Image Prior and Residual Reconstruction},   year={2021},  volume={},  number={},  pages={1-1},  doi={10.1109/TGRS.2021.3139292}}
-    
-`
+If you find our paper useful, please cite our paper.
