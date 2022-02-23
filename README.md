@@ -3,7 +3,7 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/hyperspectral-pansharpening-based-on-improved/image-super-resolution-on-chikusei-dataset)](https://paperswithcode.com/sota/image-super-resolution-on-chikusei-dataset?p=hyperspectral-pansharpening-based-on-improved)
 
 # DIP-HyperKite: Hyperspectral Pansharpening Based on Improved Deep Image Prior and  Residual Reconstruction
-[Wele Gedara Chaminda Bandara](https://www.researchgate.net/profile/Chaminda-Bandara-4), [Jeya Maria Jose Valanarasu](https://jeya-maria-jose.github.io/research/), [Vishal M. Patel](https://engineering.jhu.edu/vpatel36/sciencex_teams/vishalpatel/)
+[Wele Gedara Chaminda Bandara](https://www.wgcban.com/), [Jeya Maria Jose Valanarasu](https://jeya-maria-jose.github.io/research/), [Vishal M. Patel](https://engineering.jhu.edu/vpatel36/sciencex_teams/vishalpatel/)
 
 Accepted for Publication in IEEE Transactions on Geoscience and Remote Sensing. Download paper: [IEEE-Xplore](https://ieeexplore.ieee.org/document/9664535) or [arXiv](https://arxiv.org/abs/2107.02630).
 
