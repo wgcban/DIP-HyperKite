@@ -15,10 +15,10 @@ Hyperspectral pansharpening aims to synthesize a low-resolution hyperspectral im
     author={Bandara, Wele Gedara Chaminda and Valanarasu, Jeya Maria Jose and Patel, Vishal M.},  
     journal={IEEE Transactions on Geoscience and Remote Sensing},   
     title={Hyperspectral Pansharpening Based on Improved Deep Image Prior and Residual Reconstruction},   
-    year={2021},  
-    volume={},  
+    year={2022},  
+    volume={60},  
     number={},  
-    pages={1-1},  
+    pages={1-16},  
     doi={10.1109/TGRS.2021.3139292}} 
 
 ## DIP-HyperKite Network
